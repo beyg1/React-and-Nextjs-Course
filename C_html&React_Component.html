@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <div id="app">
+            <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+            <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+            <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+            <script type="text/jsx"> 
+             const app = document.getElementById('app'); // Get the DOM element where we want to render our React component
+ 
+             // A React component uses PascalCase (starts with a capital letter)
+             // to distinguish it from plain JS functions and HTML tags.
+             
+             function Header() { // React Component
+                return <h1>Develop. Preview. Ship.</h1>;
+             }           
+ 
+             const root = ReactDOM.createRoot(app); // Create a root to render our React component
+             
+             // To render a React component, you need to use JSX syntax,
+             // which looks like an HTML tag.
+             
+             root.render(<Header />); // Render the Header component to the DOM
+            </script> 
+        </div>
+    </body>
+</html>    

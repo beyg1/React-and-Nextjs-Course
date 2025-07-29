@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <div id="app">
+            <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+            <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+            <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+            <script type="text/jsx"> 
+             const app = document.getElementById('app');
+             
+             {/* Let's do Object destructuring */}
+             
+             function Header({title}){ 
+                console.log(title)
+                
+                {/* Let's return the prop value in html, possible because of destructuring */}
+                
+                return <h1>Develop. Preview. Ship. {title}</h1>;
+             }
+             
+             function HomePage() {
+              return (
+                      <div>
+                        <Header title="React" /> 
+                      </div>
+                     );
+                                  }
+
+              const root = ReactDOM.createRoot(app); 
+              root.render(<HomePage />); 
+            </script> 
+        </div>
+    </body>
+</html> 
