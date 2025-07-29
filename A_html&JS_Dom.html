@@ -1,31 +1,31 @@
 <html>
     <body>
         <div id="app"></div>
-        <script> // To write JS inside html, use script tag 
-        // Now, inside the script tag, you can use a DOM method, getElementById(), 
+        <script> // 🫠 To write JS inside html, use script tag 
+        // 🫠 Now, inside the script tag, you can use a DOM method, getElementById(), 
         // to select the <div> element by its id
             const appDiv = document.getElementById('app');
-            // Create a new H1 element
+            // 🫠 Create a new H1 element
             const header = document.createElement('h1');
  
-            // Create a new text node(just think of it as text) for the H1 element
+            // 🫠 Create a new text node(just think of it as text) for the H1 element
             const text = 'Develop. Preview. Ship.';
             const headerContent = document.createTextNode(text);
 
-            // Set the text content of the H1 element. by DOM property instead of DOM method
-            // Using .textContent is a more direct and safer way to add text. 
-            // header.textContent = 'Develop. Preview. Ship.'; if uncommented content is displayed twice
+            // 🫠 Set the text content of the H1 element. by DOM property instead of DOM method
+            // 🫠 Using .textContent is a more direct and safer way to add text. 
+            // 🫠 header.textContent = 'Develop. Preview. Ship.'; if uncommented content is displayed twice
  
-            // Append the text to the H1 element
+            // 🫠 Append the text to the H1 element
             header.appendChild(headerContent);
  
-            // Place the H1 element inside the div with id 'app'
+            // 🫠 Place the H1 element inside the div with id 'app'
             appDiv.appendChild(header);
         </script>    
     </body>
 </html>
 
-<!--Declarative Programming vs Imperative Programming
+<!-- 🫠 Declarative Programming vs Imperative Programming
 Declarative programming focuses on what to do, while imperative programming focuses on how to do it
 In the above code, we are using Imperative programming to create and manipulate the DOM
 We are explicitly told the browser how to create h1 tag, set their content, and append them to the DOM
