@@ -1,4 +1,4 @@
-import './ui/global.css'
+import './ui/globals.css'
 
 
 export default function RootLayout({
